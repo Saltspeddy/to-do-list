@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="h-screen bg-gray-400 flex flex-col items-center justify-center" style="background: rgb(54,71,221); transform: tr;
+background: linear-gradient(90deg, rgba(54,71,221,1) 0%, rgba(170,18,190,1) 42%, rgba(241,0,0,1) 100%);">
+    <div class="h-full w-3/6 flex flex-col items-center justify-center">
+        <div class="w-full relative flex flex-row my-5">
+            <input id="task" class="w-full rounded-3xl p-4" type="text">
+            <button id="add">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute right-3 top-1/4 bg-white rounded w-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m7-7H5" />
+                </svg>
+            </button>  
+        </div>
+        <div class="h-96 w-full  overflow-scroll">
+            <div id="ciuruc"></div>
+        </div>
+        <div class="mt-3 w-full flex justify-end">
+            <button class="p-3 rounded-3xl bg-red-500 text-white"
+            onclick="deleteAll()">
+            delete all
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.to-do{
+    @apply p-3 mx-4 my-3 bg-gray-300 rounded-3xl;
+}
+
